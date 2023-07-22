@@ -1,0 +1,74 @@
+language: "en"
+intents:
+  TimerStart:
+    data:
+#All times
+      - sentences:
+          - "(start|set|would) [a] timer (for|from) {hours} (hour|hours) [and] {minutes} (minute|minutes) [and] {seconds} (second|seconds) [[want|can] do] [start]"
+#All one hour
+      - sentences:
+          - "(start|set|would) [a] timer (for|from) {hours} (hour|hours) [[want|can] do] [start]"
+        slots:
+          seconds: 0
+          minutes: 0
+#All one minute
+      - sentences:
+          - "(start|set|would) [a] timer (for|from) {minutes} (minute|minutes) [[want|can] do] [start]"
+        slots:
+          seconds: 0
+          hours: 0
+#All one second
+      - sentences:
+          - "(start|set|would) [a] timer (for|from) {seconds} (second|seconds) [[want|can] do] [start]"
+        slots:
+          minutes: 0
+          hours: 0
+#Gone hour, wel minutes and seconds
+      - sentences:
+          - "(start|set|would) [a] timer (for|from) {minutes} (minute|minutes) [en] {seconds} (second|seconds) [[want|can] do] [start]"
+        slots:
+          hours: 0          
+#Gone seconds, wel hours and minutes
+      - sentences:
+          - "(start|set|would) [a] timer (for|from) {hours} (hour|hours) [en] {minutes} (minute|minutes) [[want|can] do] [start]"
+        slots:
+          seconds: 0
+#Halven
+      - sentences:
+          - "(start|set|would) [a] timer (for|from) [{minutes}][ ]([en] [one] half | [en] [one] halve) minute [[want|can] do] [start]"
+          - "(start|set|would) [a] timer (for|from) (0,5|0.5) minute [[want|can] do] [start]"
+        slots:
+          hours: 0
+          seconds: 30
+      - sentences:
+          - "(start|set|would) [a] timer (for|from) (anderhalve|anderhalf) minute [[want|can] do] [start]"
+          - "(start|set|would) [a] timer (for|from) (1,5|1.5) minute [[want|can] do] [start]"
+        slots:
+          hours: 0
+          seconds: 30
+          minutes: 1
+      - sentences:
+          - "(start|move|would) [a] timer (for|from) [{hours}][ ]([en] [one] half | [en] [one] halve) hour [[want|can] do] [start]"
+        slots:
+          minutes: 30
+          seconds: 0
+      - sentences:
+          - "(start|move|would) [a] timer (for|from) (anderhalve|anderhalf) hour [[want|can] do] [start]"
+          - "(start|move|would) [a] timer (for|from) (1,5|1.5) hour [[want|can] do] [start]"
+        slots:
+          hours: 1
+          seconds: 0
+          minutes: 30
+lists:
+  seconds:
+    range:
+      from: 0
+      to: 120    
+  minutes:
+    range:
+      from: 0
+      to: 120
+  hours:
+    range:
+      from: 0
+      to: 24

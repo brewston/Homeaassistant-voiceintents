@@ -1,0 +1,21 @@
+language: "en"
+intents:
+  PersonHome:
+    data:
+      - sentences:
+          - "is {person} [at] home [right now]"       
+  PersonAway:
+    data:
+      - sentences:
+          - "where is {person}"
+lists:
+  person:
+    values:
+      - in: "Tim"
+        out: "person.tim"
+      - in: "Emma"
+        out: "person.emma"
+      - in: "Isobel"
+        out: "person.isobel"
+      - in: "Ellie"
+        out: "person.ellie"

@@ -1,0 +1,21 @@
+language: "en"
+intents:
+  TimerStop:
+    data:
+      - sentences:
+          - "(stop|cancel|would) [the|my] {timer} timer[s] [[want|can] do] [stop|turn off]"
+      - sentences:
+          - "(stop|cancel|would) [the|my] timer [[want|can] do] [stop|turn off]"
+        slots:
+          timer: "timer.timer0"
+lists:
+  timer:
+    values:
+      - in: "first"
+        out: "timer.timer1"
+      - in: "second"
+        out: "timer.timer2"
+      - in: "third"
+        out: "timer.timer3"
+      - in: "all"
+        out: "timer.timer1, timer.timer2, timer.timer3"

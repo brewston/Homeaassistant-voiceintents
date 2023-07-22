@@ -1,0 +1,23 @@
+language: "en"
+intents:
+  TimerDuration:
+    data:
+      - sentences:
+          - "(how long|how much time) is left on [my|the] {timer} timer"
+          - "how long does the {timer} timer have left"
+      - sentences:
+          - "(how long|how much time) is left on [my|the] timer[s]"
+          - "show my timer[s]"
+        slots:
+          timer: "timer.timer0"
+lists:
+  timer:
+    values:
+      - in: "first"
+        out: "timer.timer1"
+      - in: "second"
+        out: "timer.timer2"
+      - in: "third"
+        out: "timer.timer3"
+      - in: "all"
+        out: "timer.timer1, timer.timer2, timer.timer3"
