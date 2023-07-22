@@ -16,12 +16,14 @@ All the other files need to be copied to :- /config/custom_sentences/en - if you
 Setting Timers
 ==============
 
-Taken from https://community.home-assistant.io/t/set-a-timer-using-ha-assist
+Taken from https://community.home-assistant.io/t/set-a-timer-using-ha-assist - credit to the guys on that thread :)
+
+Note - you need to create 3 timers (in helpers) and you also need to create automations for then the timer expires. As well as starting/stopping timers, you can ask how long is left.
 
 Adding to shopping list
 =======================
 
-Taken from https://community.home-assistant.io/t/calling-shopping-list-add-item-service-from-ha-assist/540427
+Taken from https://community.home-assistant.io/t/calling-shopping-list-add-item-service-from-ha-assist/540427 - credit to the guys on that thread :)
 
 Note, that currently you need to prepopulate the list with the items you ever want to add (which is a pain, although I used some python to create the yaml)
 My plan is to set up https://github.com/siemon-geeroms/yarvis - but I've not got it working yet
@@ -29,6 +31,6 @@ My plan is to set up https://github.com/siemon-geeroms/yarvis - but I've not got
 Person finder
 =============
 
-Taken from https://community.home-assistant.io/t/custom-intents-using-name/571831
+Taken from https://community.home-assistant.io/t/custom-intents-using-name/571831 - credit to the guys on that thread :)
 
 You can ask : "Is person X at home?" "Where is person X ?"  - Needs https://www.home-assistant.io/integrations/google_maps/ for location tracking.
