@@ -14,8 +14,8 @@ lists:
       - in: "Tim"
         out: "person.tim"
       - in: "Emma"
-        out: "person.emma"
+        out: "person.wife"
       - in: "Isobel"
-        out: "person.isobel"
+        out: "person.child1
       - in: "Ellie"
-        out: "person.ellie"
+        out: "person.child2"
