@@ -13,9 +13,9 @@ lists:
     values:
       - in: "Tim"
         out: "person.tim"
-      - in: "Emma"
+      - in: "Wife"
         out: "person.wife"
-      - in: "Isobel"
+      - in: "Child1"
         out: "person.child1
-      - in: "Ellie"
+      - in: "Child2"
         out: "person.child2"
