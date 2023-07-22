@@ -1,0 +1,7 @@
+language: "en"
+intents:
+  WashingMachine:
+    data:
+      - sentences:
+        - "how long is left on the [fucking] washing machine"  
+        - "is the washing machine running"
