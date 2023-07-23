@@ -8,6 +8,7 @@ intents:
     data:
       - sentences:
           - "where is {person}"
+          - "where's {person}"
 lists:
   person:
     values:
