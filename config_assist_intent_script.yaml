@@ -209,7 +209,7 @@ PersonHome:
 PersonAway:
 
      speech:
-       text: "{{state_attr(person, 'friendly_name') }} is {% if states(person) != 'away'%} at {%endif %} {{states(person) }}"
+       text: "{{state_attr(person, 'friendly_name') }} is{% if states(person) == 'not_home'%} away.{% else%} at {{states(person) }} {%endif %}"
        
 WashingMachine:
      speech:
