@@ -25,10 +25,10 @@ Adding to shopping list
 
 This is no longer needed since 2023.8
 
-Taken from https://community.home-assistant.io/t/calling-shopping-list-add-item-service-from-ha-assist/540427 - credit to the guys on that thread :)
+~~Taken from https://community.home-assistant.io/t/calling-shopping-list-add-item-service-from-ha-assist/540427 - credit to the guys on that thread :)~~
 
-Note, that currently you need to prepopulate the list with the items you ever want to add (which is a pain, although I used some python to create the yaml)
-My plan is to set up https://github.com/siemon-geeroms/yarvis - but I've not got it working yet
+~~Note, that currently you need to prepopulate the list with the items you ever want to add (which is a pain, although I used some python to create the yaml)~~
+~~My plan is to set up https://github.com/siemon-geeroms/yarvis - but I've not got it working yet~~
 
 Person finder
 =============
