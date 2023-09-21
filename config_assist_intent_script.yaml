@@ -216,7 +216,19 @@ WashingMachine:
        text: >
 
         {{ "The " + (["stupid", "fucking", "overworked", ""] | random) + " washing machine"}}{% if states('sensor.washing_machine_operation_state') == 'Run' %} has {{( ((as_timestamp(states('sensor.washing_machine_remaining_program_time')) |int)  - (as_timestamp(now()))|int)/60 )|int}} minutes left{% else %} is not running {% endif %}
-             
+
+CreateReminder:
+
+    speech:
+      text: "Reminder to {{reminder }} set"
+    action:
+      service: input_text.set_value
+      data:
+         value: "{{ reminder }}"
+      target:
+         entity_id: input_text.reminder             
+
+
 TestIntent:
     action:
       service: notify.mobile_app_galaxy_watch4_classic_5epz
