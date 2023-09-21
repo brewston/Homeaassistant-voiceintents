@@ -35,9 +35,14 @@ Person finder
 
 Taken from https://community.home-assistant.io/t/custom-intents-using-name/571831 - credit to the guys on that thread :)
 
-You can ask : "Is person X at home?" "Where is person X ?"  - Needs https://www.home-assistant.io/integrations/google_maps/ for location tracking.
+You can ask : "Is person X at home?" "Where is person X ?"  - Needs https://www.home-assistant.io/integrations/google_maps/ for location tracking (or companion app on all phones)
 
 Washing machine timer checker
 =============================
 
 Since I have the Bosch integration on my washing machine, it provides a 'time left on cycle' value. You can query this (with optional swearing) 
+
+Setting reminders
+=================
+
+Create a helper called input_text.reminder and create a dashboard entry to display it. You can then say stuff like : "Create a reminder to post that letter"
