@@ -1,0 +1,12 @@
+language: "en"
+intents:
+  CreateReminder:
+        data:
+            - sentences:
+                - "Create [a] reminder to {reminder}"
+                - "Set [a] reminder to {reminder}"
+                - "Remind me to {reminder}"
+               
+lists:
+    reminder:
+         wildcard: true
