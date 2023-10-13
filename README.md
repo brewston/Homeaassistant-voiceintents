@@ -11,6 +11,10 @@ This tells HA that your intent scripts will be in a different file, with that na
 
 All the other files need to be copied to :- /config/custom_sentences/en - if you are using english as your HA language. Adjust to a diffent lang code if you are not (I've not tested this, sorry)
 
+# custom wakewords
+
+By following https://www.home-assistant.io/voice_control/create_wake_word/ guide I created edna.tflite which allows you to wake HA voice assistant with that name
+
 
 
 Setting Timers
