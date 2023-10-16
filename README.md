@@ -22,7 +22,7 @@ Setting Timers
 
 Taken from https://community.home-assistant.io/t/set-a-timer-using-ha-assist - credit to the guys on that thread :)
 
-Note - you need to create 3 timers (in helpers) and you also need to create automations for then the timer expires. As well as starting/stopping timers, you can ask how long is left.
+Note - you need to create 3 timers (in helpers) and you also need to create automations for when the timer expires. As well as starting/stopping timers, you can ask how long is left.
 
 Adding to shopping list
 =======================
