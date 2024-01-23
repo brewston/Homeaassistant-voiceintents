@@ -24,6 +24,11 @@ Taken from https://community.home-assistant.io/t/set-a-timer-using-ha-assist - c
 
 Note - you need to create 3 timers (in helpers) and you also need to create automations for when the timer expires. As well as starting/stopping timers, you can ask how long is left.
 
+Setting Phone Timers
+====================
+
+If you're running HA companion app on your android phone you can send an android intent to it to start a timer for X mins
+
 Adding to shopping list
 =======================
 
