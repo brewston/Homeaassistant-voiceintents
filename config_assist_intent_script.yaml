@@ -227,7 +227,18 @@ CreateReminder:
          value: "{{ reminder }}"
       target:
          entity_id: input_text.reminder             
-
+         
+SetPhoneTimer:
+        async_action: True
+        action:
+            - service: notify.mobile_app_sm_s911b
+              data:
+                message: "command_activity"
+                data:
+                  intent_action: "android.intent.action.SET_TIMER"
+                  intent_extras: "android.intent.extra.alarm.LENGTH:{{ minutes | int*60 }},android.intent.extra.alarm.SKIP_UI:true"
+        speech:
+          text: "Phone timer set for {{ minutes }} minutes"
 
 TestIntent:
     action:
