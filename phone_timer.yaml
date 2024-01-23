@@ -1,0 +1,4 @@
+  SetPhoneTimer:
+        data:
+            - sentences:
+                - "Set [a] phone timer for {minutes} minutes"
